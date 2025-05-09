@@ -1,0 +1,461 @@
+.dark_theme {
+    --bg-clr: #252525;
+    --color: #ffffff;
+    --sidebar-clr: #252525;
+    --border-clr: #FFFFFF21;
+
+}
+
+.light_theme {
+    --bg-clr: #f6f8f9;
+    --color: #0E253C;
+    --white-clr: #ffffff;
+    --border-clr: #0E253C1A;
+}
+
+
+body {
+    background-color: var(--bg-clr);
+}
+
+.dashboardBody {
+    background-color: var(--bg-clr);
+    padding: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input {
+    color: var(--color);
+}
+
+.headerBox {
+    background-color: var(--white-clr);
+}
+
+.sideBarBox {
+    width: 100%;
+    max-width: 390px;
+}
+
+
+.border_gray {
+    border: 1px solid var(--border-clr)
+}
+
+.mainContentBox {
+    margin-left: 12px;
+    /* background-color: #FFFFFF; */
+    background-color: var(--white-clr);
+    border-top: 0;
+    border-radius: 16px;
+
+}
+
+/* ####headerBox start here#### */
+.headerBox {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.headerBox .menuIcon {
+    padding: 6px;
+    border: 1px solid var(--border-clr);
+    font-size: 8px;
+    margin-left: 86px;
+}
+
+.headerBox .menuIcon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.headerBox .HeaderSearch_bar {
+    border-radius: 12px;
+    border: 1px solid var(--border-clr);
+}
+
+.headerBox .HeaderSearch_bar input {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+
+.headerBox .notification_bell {
+    border: 1px solid #0E253C1A;
+    box-shadow: 1px 1px 3px 0px #00000026;
+    border-radius: 12px;
+    padding: 9px;
+    width: 38px;
+    height: 38px;
+}
+
+.headerBox .notification_bell svg {
+    fill: #252525;
+}
+
+.headerBox .profileBox .nameLogo {
+    width: 36px;
+    height: 36px;
+}
+
+.headerBox .profileBox .userName {
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--color);
+}
+
+.headerBox .profileBox .downArrow {
+    margin-left: 16px;
+    color: var(--color);
+}
+
+/* ####statusBox start here#### */
+.statusBox {
+    background-color: var(--white-clr);
+
+}
+
+.statusBox .trackName {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+
+.statusBox .trackStatus {
+    background-color: #E48D211A;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #E48D21;
+}
+
+.statusBox .trackEmailId {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+}
+
+
+.statusBox .changeStatusBox {
+    font-size: 12px;
+    line-height: 18px;
+    color: #513CCE;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.statusBox .trackLogo {
+    height: 48px;
+    width: 48px;
+    background: #513CCE;
+}
+
+/* ####statusBox end here#### */
+
+/* ####ContactActions start here#### */
+
+.contactActions {
+    margin: 16px 0;
+    background-color: var(--white-clr);
+}
+
+.contactActions .contactbox {
+    border-right: 1px solid #0E253C1A;
+}
+
+.contactActions .contactbox:last-child {
+    border-right: none;
+}
+
+.contactActions .contactTxt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+}
+
+.contactActions svg {
+    fill: var(--color);
+    width: 20px;
+    height: 20px;
+
+}
+
+/* ####ContactActions end here#### */
+
+.businessHead {
+    margin-bottom: 17px;
+}
+
+.businessDetailsForm {
+    background-color: var(--white-clr);
+}
+
+.businessDetailsForm .businessHead h2 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.businessDetailsForm .businessHead button span {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    margin-left: 8px;
+}
+
+.businessDetailsForm .businessHead button {
+    color: #22C55E;
+    cursor: pointer;
+}
+
+.businessDetailsForm .businessHead button svg {
+    width: 15px;
+    height: 15px;
+
+}
+
+.formInput {
+    border-bottom: 1px solid #0E253C1A;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.formInput:last-child {
+    border-bottom: none;
+}
+
+.formInput label {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    color: var(--color);
+}
+
+.phoneInput input {
+    width: 100%;
+}
+
+.phoneInput {
+    border-bottom: 0px;
+}
+
+.formInput input,
+.formInput select {
+    border: 0.66px solid var(--border-clr);
+    border-radius: 11px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color);
+}
+
+.businessAmountBox span {
+    font-size: 11px;
+    line-height: 100%;
+    color: #0E253CD9;
+
+}
+
+.businessAmountBox button svg {
+    width: 15;
+    height: 15;
+    color: #513CCE;
+}
+
+.businessAmountBox .amountTxt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* ####businessDetailsForm end here#### */
+.tabsActions {
+    background-color: var(--bg-clr);
+}
+
+.tabsActions button {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 4px;
+    background-color: var(--bg-clr);
+    cursor: pointer;
+    border: 1px solid var(--border-clr);
+    color: var(--color);
+    border-bottom: 0px;
+
+    &:hover {
+        color: #513CCE;
+    }
+}
+
+.tabsActions button:last-child {
+    margin-right: 0px;
+}
+
+.tabsActions .activeTab {
+    background-color: var(--white-clr);
+    color: #513CCE;
+
+}
+
+/* ####tabs end here#### */
+
+.OrderStatus {
+    max-width: 717px;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 12px;
+    background-color: var(--bg-clr);
+}
+
+.OrderStatusHeader {
+    padding: 12px;
+    padding-left: 16px;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.OrderStatusHeader h2 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.OrderStatus .formInput {
+    margin: 0;
+    padding: 0;
+}
+
+.OrderStatus .formInput input,
+.OrderStatus .formInput select {
+    background-color: var(--white-clr);
+}
+
+
+.infoStatusBox {
+    border: 1px solid var(--border-clr);
+    border-top: 0px;
+    padding: 32px 20px;
+}
+
+.infoStatusBox:nth-child(even) {
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.infoStatusBox:nth-child(odd) {
+    border-left: 0px;
+
+}
+
+.infoStatusBox:last-child,
+.infoStatusBox:nth-child(5) {
+    border-bottom: 0px;
+}
+
+.infoStatusBox img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 4px;
+
+}
+
+.infoStatusBox label {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color);
+}
+
+.infoStatusBox p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.pieChart .pieValue {
+    margin-top: -192px;
+    font-size: 33.28px;
+    line-height: 48.4px;
+    letter-spacing: 0px;
+    color: var(--color);
+}
+
+/* ####Order Status end here#### */
+
+.activityLog {
+    margin-right: 12px;
+}
+
+.activityLog .chartBox {
+    padding: 20px;
+    height: 352px;
+    overflow-y: auto;
+}
+
+.activityLog .chartBox .chartDate {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0E253C;
+    margin-bottom: 8px;
+}
+
+.activityLog .chartBox .messageIcon {
+    padding: 5px;
+    background: #E48D21;
+}
+
+.activityLog .chartBox .messageIcon svg {
+    width: 13px;
+    height: 13px;
+}
+
+.activityLog .chartBox .messageLine {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color);
+}
+
+.chartBox>div {
+    margin-bottom: 20px;
+
+}
+
+.collapseBtn {
+    border-radius: 12px;
+    border: 1px solid var(--border-clr);
+    background-color: var(--bg-clr);
+}
+
+.collapseBtn button {
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+/* ####Order Status end here#### */
+
+.Revenue {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
