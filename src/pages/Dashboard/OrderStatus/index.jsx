@@ -13,12 +13,12 @@ import {
     CheckCheck,
     RotateCcw,
 } from "lucide-react";
-import All from "../../../assets/All.png";
-import New from "../../../assets/New.png";
-import Pending from "../../../assets/Pending.png";
-import Dispatched from "../../../assets/Dispatched.png";
-import Cancelled from "../../../assets/Cancelled.png";
-import Delivered from "../../../assets/Delivered.png";
+import All from "../../../assets/Images/All.png";
+import New from "../../../assets/Images/New.png";
+import Pending from "../../../assets/Images/Pending.png";
+import Dispatched from "../../../assets/Images/Dispatched.png";
+import Cancelled from "../../../assets/Images/Cancelled.png";
+import Delivered from "../../../assets/Images/Delivered.png";
 
 const data = [
     { name: "New", value: 50 },

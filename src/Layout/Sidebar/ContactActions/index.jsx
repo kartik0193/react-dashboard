@@ -1,4 +1,3 @@
-// ContactActions.jsx
 import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
 
 const ContactActions = () => {

@@ -1,14 +1,17 @@
 import React from 'react'
-import Status from './Status'
 import ContactActions from './ContactActions'
 import BusinessDetailsForm from './BusinessDetails'
+import StatusDetails from './StatusDetails'
+
 
 const SideBar = () => {
   return (
     <div>
-      <Status />
-      <ContactActions />
-      <BusinessDetailsForm  />
+      <div className='flex lg:flex-col items-center'>
+        <StatusDetails />
+        <ContactActions />
+      </div>
+      <BusinessDetailsForm />
     </div>
   )
 }

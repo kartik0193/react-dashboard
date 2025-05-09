@@ -51,12 +51,26 @@ input {
 
 .mainContentBox {
     margin-left: 12px;
-    /* background-color: #FFFFFF; */
     background-color: var(--white-clr);
     border-top: 0;
     border-radius: 16px;
 
 }
+
+.logoBox {
+    display: flex;
+    align-items: center;
+}
+
+.navMenuBox,
+.showMobile {
+    display: none;
+}
+
+.showDesktop {
+    display: block;
+}
+
 
 /* ####headerBox start here#### */
 .headerBox {
@@ -90,7 +104,7 @@ input {
 }
 
 .headerBox .notification_bell {
-    border: 1px solid #0E253C1A;
+    border: 1px solid var(--bg-clr);
     box-shadow: 1px 1px 3px 0px #00000026;
     border-radius: 12px;
     padding: 9px;
@@ -99,7 +113,7 @@ input {
 }
 
 .headerBox .notification_bell svg {
-    fill: #252525;
+    fill: var(--color);
 }
 
 .headerBox .profileBox .nameLogo {
@@ -458,4 +472,95 @@ input {
     max-width: 100%;
     margin-right: 12px;
     margin-bottom: 12px;
+}
+
+/* ###trading view start here#### */
+
+.tradingBox {
+    background-color: var(--bg-clr);
+}
+
+.tradingBox .tradTop .tradIcon{
+    margin-right: 8px;
+
+}
+
+.tradingBox .tradTop .titleTxt {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.tradingBox .tradTop .valueTxt {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.tradingBox .tradBottom {
+    background-color: var(--white-clr);
+    border-top: 1px solid var(--border-clr);
+}
+
+.tradingBox .tradBottom span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* ###media query start here#### */
+
+@media screen and (max-width: 1025px) {
+
+    .logoBox,
+    .showDesktop {
+        display: none;
+    }
+
+    .navMenuBox,
+    .showMobile {
+        display: block;
+    }
+
+    .sideBarBox {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mainContentBox {
+        margin-top: 16px;
+        margin-left: 0px;
+    }
+
+    .OrderStatus {
+        max-width: 100%;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .dashboard_LayoutMobile {
+        padding: 15px;
+    }
+
+    .Revenue {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .statusBox {
+        margin-right: 6px;
+    }
+
+    .contactActions {
+        margin-left: 6px;
+    }
+
+    .formInput {
+        border: 0px;
+    }
+
+    .formInput input {
+        width: 95%;
+    }
 }

@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Bell, Search, ChevronDown } from 'lucide-react';
 import { Menu, MenuButton, MenuItem, MenuItems, } from '@headlessui/react'
-import Logomark from '../../assets/Logomark.png';
-import menuIcon from '../../assets/menuImg.png';
-import './index.css';
-
-
-
+import Logomark from '../../assets/Images/Logomark.png';
+import menuIcon from '../../assets/Images/menuImg.png';
+import navMenu from '../../assets/Images/menu.png';
 
 const Header = () => {
-    const [theme, setTheme] = useState('light_theme')
+    const [theme, setTheme] = useState('dark_theme')
 
     const themeChange = () => {
         let themeName = theme == 'dark_theme' ? 'light_theme' : 'dark_theme'
@@ -26,16 +23,21 @@ const Header = () => {
     return (
         <header className="w-full flex headerBox items-center justify-between ">
             <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2">
-                    <div className="bg-gradient-to-tr  text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">
-                        <img src={Logomark} alt="logo" />
-                    </div>
-                    <span className="text-xl font-semibold text-gray-800">Quotient</span>
+                <div className='navMenuBox'>
+                    <img src={navMenu} alt="navMenu" />
                 </div>
+                <div className='logoBox'>
+                    <div className="flex items-center gap-2">
+                        <div className="bg-gradient-to-tr  text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">
+                            <img src={Logomark} alt="logo" />
+                        </div>
+                        <span className="text-xl font-semibold text-gray-800">Quotient</span>
+                    </div>
 
-                <button className="p-1 rounded-full menuIcon hover:bg-gray-100 border ">
-                    <img src={menuIcon} alt="menuIcon" />
-                </button>
+                    <button className="p-1 rounded-full menuIcon hover:bg-gray-100 border ">
+                        <img src={menuIcon} alt="menuIcon" />
+                    </button>
+                </div>
             </div>
 
             <div className="flex-1 max-w-lg mx-6 ">
@@ -78,7 +80,7 @@ const Header = () => {
                                         onClick={() => themeChange()}
                                         className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                                     >
-                                        {theme}
+                                        {theme == 'dark_theme' ? 'Light Mode' : 'Dark Mode'}
                                     </a>
                                 </MenuItem>
                             </div>
