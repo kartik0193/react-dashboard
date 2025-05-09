@@ -17,20 +17,40 @@ A modern, responsive dashboard application built using **React**, **Vite**, **Ta
 
 ## 📂 Project Structure
 
-react-dashboard/
-├── public/ # Static assets
+REACT-DASHBOARD/
+├── node_modules/
+├── public/
 ├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Route-based components (Dashboard, Reports, etc.)
-│ ├── routes/ # Routing configuration
-│ ├── App.jsx # Main app entry
-│ ├── main.jsx # Renders the app
-│ └── index.css # Tailwind base styles
-├── tailwind.config.js # Tailwind configuration
-├── vite.config.js # Vite build configuration
-└── package.json # Project dependencies and scripts
-
+│   ├── assets/
+│   ├── Layout/
+│   │   ├── Header/
+│   │   │   └── index.jsx
+│   │   ├── Sidebar/
+│   │   │   ├── BusinessDetails/
+│   │   │   ├── ContactActions/
+│   │   │   ├── StatusDetails/
+│   │   │   ├── index.jsx
+│   │   │   └── index.css
+│   ├── pages/
+│   │   ├── Dashboard/
+│   │   ├── ActivityLog/
+│   │   ├── OrderStatus/
+│   │   ├── Revenue/
+│   │   ├── TradStats/
+│   │   ├── index.jsx
+│   │   └── NotFound.jsx
+│   ├── routes/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
 
 ---
 
