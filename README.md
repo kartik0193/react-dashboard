@@ -1,12 +1,46 @@
-# React + Vite
+# 📊 React Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive dashboard application built using **React**, **Vite**, **Tailwind CSS**, **React Router**, **Lucide React**, and **Recharts**. This project is designed to be a clean and customizable starting point for admin panels, analytics dashboards, or internal tools.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **[React](https://reactjs.org/)** – UI library for building reusable components
+- **[Vite](https://vitejs.dev/)** – Fast, opinionated build tool and development server
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework for rapid UI development
+- **[React Router DOM](https://reactrouter.com/)** – Declarative routing for React apps
+- **[Lucide React](https://lucide.dev/)** – Beautiful and consistent open-source icon library
+- **[Recharts](https://recharts.org/)** – Charting library built on React and D3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+react-dashboard/
+├── public/ # Static assets
+├── src/
+│ ├── assets/ # Images and icons
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Route-based components (Dashboard, Reports, etc.)
+│ ├── routes/ # Routing configuration
+│ ├── App.jsx # Main app entry
+│ ├── main.jsx # Renders the app
+│ └── index.css # Tailwind base styles
+├── tailwind.config.js # Tailwind configuration
+├── vite.config.js # Vite build configuration
+└── package.json # Project dependencies and scripts
+
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kartik0193/react-dashboard.git
+cd react-dashboard
+
+✅ You can start this project using the npm run dev command.
+
