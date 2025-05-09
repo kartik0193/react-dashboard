@@ -3,6 +3,7 @@ import { useState } from "react";
 import OrderStatus from "./OrderStatus";
 import ActivityLog from './ActivityLog';
 import Revenue from './Revenue';
+import TradStats from './TradStats';
 
 const tabs = [
   "Dashboard",
@@ -34,12 +35,13 @@ const Dashboard = () => {
           </button>
         ))}
       </div>
-      <div className='flex'>
+      <TradStats />
+      <div className='flex flex-col lg:flex-row dashboard_LayoutMobile'>
         <OrderStatus />
-        <ActivityLog/>
+        <ActivityLog />
       </div>
-      <div className='flex'>
-        <Revenue/>
+      <div className='flex dashboard_LayoutMobile'>
+        <Revenue />
       </div>
     </>
   );

@@ -1,15 +1,12 @@
 import React from 'react'
 
-const Status = ({ name = "Truck Grear", email = "jillali@onechanneladmin.com", initials = "TG", status = "BUSINESS" }) => {
+const StatusDetails = ({ name = "Truck Grear", email = "jillali@onechanneladmin.com", initials = "TG", status = "BUSINESS" }) => {
   return (
     <div className="flex items-start statusBox border_gray justify-between  rounded-xl p-4 w-full">
       <div className="flex items-center mr-2	">
         <div className="relative mr-2">
           <div className="rounded-full trackLogo text-white flex items-center justify-center font-bold text-lg">
             {initials}
-            {/* <div className="absolute bottom-0 left-0 bg-white text-[10px] text-gray-700 px-1 rounded-full border shadow-sm">
-              Edit
-            </div> */}
             <span className="absolute top-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
           </div>
         </div>
@@ -31,4 +28,4 @@ const Status = ({ name = "Truck Grear", email = "jillali@onechanneladmin.com", i
   )
 }
 
-export default Status
+export default StatusDetails
